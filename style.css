@@ -99,8 +99,8 @@ body {
 
 .header-area .hero-area .hero-contents p {
     margin-bottom: 10px;
-    font-size: 13px;
-    line-height: 1.1em;
+    font-size: 16px;
+    line-height: 1.2em;
     letter-spacing: 2.8px;
     font-weight: 700;
 
@@ -136,9 +136,82 @@ body {
 
 /* hero area end*/
 
+/* ======================== About Area Start =========================*/
+.main-area .about-area {
+    padding: 100px 0;
+    text-align: center; 
+    
+}
 
 
+.about-area .about-area-contents {
+    width: 70%;
+    margin: 0 auto;
+}
 
+.about-area .about-area-contents .title {
+    font-family: Playfair Display,serif;
+    color: #171717;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    font-size: 2.6em;
+    color: #191919;
+}
+
+.about-area .about-area-contents .desc {
+    font-size: 0.9em;
+    margin-bottom: 40px;
+    line-height: 1.7em;
+    color: #787878;
+    font-weight: 500;
+}
+
+.about-area .about-area-contents .signature {
+    max-width: 70%;
+    height: auto;
+}
+
+/* ======================== About Area End =========================*/
+
+/* ======================== Counter Area start =========================*/
+
+#counter-area {
+    padding: 100px 0;
+    background-color: #191919;
+}
+
+#counter-area .counter-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#counter-area .counter-contents .counter-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+#counter-area .counter-contents .counter-item i {
+    font-size: 3em;
+}
+
+#counter-area .counter-contents .counter-item .counts strong {
+    font-size: .8em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#counter-area .counter-contents .counter-item .counts .count {
+    margin-bottom: 5px;
+}
+
+
+/* ======================== Counter Area end =========================*/
 
 
 
