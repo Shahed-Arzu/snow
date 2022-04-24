@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Playfair Display', serif;
 
@@ -134,40 +138,54 @@ body {
     background-color: #444444;
 }
 
+.header-area .hero-area .next-button {
+    text-align: center;
+}
+
+.header-area .hero-area .next-button svg {
+    color: white;
+    border: 2px solid white;
+    padding: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 /* hero area end*/
 
 /* ======================== About Area Start =========================*/
-.main-area .about-area {
+.main-area #about-area {
     padding: 100px 0;
     text-align: center; 
     
 }
 
 
-.about-area .about-area-contents {
+#about-area .about-area-contents {
     width: 70%;
     margin: 0 auto;
 }
 
-.about-area .about-area-contents .title {
+#about-area .about-area-contents .title {
     font-family: Playfair Display,serif;
     color: #171717;
     font-weight: 700;
     text-transform: capitalize;
     margin-bottom: 40px;
     font-size: 2.6em;
-    color: #191919;
+    
 }
 
-.about-area .about-area-contents .desc {
+#about-area .about-area-contents .desc {
     font-size: 0.9em;
     margin-bottom: 40px;
     line-height: 1.7em;
-    color: #787878;
+    color: #5f5f5f;
     font-weight: 500;
 }
 
-.about-area .about-area-contents .signature {
+#about-area .about-area-contents .signature {
     max-width: 70%;
     height: auto;
 }
@@ -178,29 +196,33 @@ body {
 
 #counter-area {
     padding: 100px 0;
-    background-color: #191919;
+    background-image: url(./assets/img/bg-pattern.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #counter-area .counter-contents {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
 }
 
 
 #counter-area .counter-contents .counter-item {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+    column-gap: 20px;
     color: white;
+    align-items: center;
+
 }
 
 #counter-area .counter-contents .counter-item i {
-    font-size: 3em;
+    font-size: 50px;
 }
 
 #counter-area .counter-contents .counter-item .counts strong {
+    display: block;
     font-size: .8em;
     text-transform: uppercase;
     font-weight: 500;
@@ -209,6 +231,24 @@ body {
 #counter-area .counter-contents .counter-item .counts .count {
     margin-bottom: 5px;
 }
+
+@media (max-width: 767px) {
+    #counter-area .counter-contents {
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 30px;
+        
+    }
+     
+}
+@media (max-width: 575px) {
+    #counter-area .counter-contents {
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 30px;
+        
+    }
+     
+}
+
 
 
 /* ======================== Counter Area end =========================*/
