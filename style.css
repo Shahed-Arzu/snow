@@ -254,7 +254,7 @@ body {
 /* ======================== Counter Area end =========================*/
 /* ======================== Gallery Area start =========================*/
 
-.main-area #Gallery-area {
+.main-area #gallery-area {
     padding: 100px 0;
     text-align: center; 
     
@@ -308,7 +308,7 @@ body {
     visibility: visible;
   }
   
-  #gallery-area .gallery-contents .gallery-item:hover .logo-area {
+  #gallery-area .gallery-contents .gallery-item:hover .pic-area {
     opacity: 1.0;
     visibility: visible;
   }
@@ -316,43 +316,49 @@ body {
   
   #gallery-area .gallery-contents .gallery-item:nth-child(1) {
     grid-area: img-1;
-    background-image: url('./assets/img/portfolio-7-sm.jpg');
+    background-image: url('./assets/img/portfolio1.jpg');
   }
   
   #gallery-area .gallery-contents .gallery-item:nth-child(2) {
     grid-area: img-2;
-    background-image: url('./assets/img/portfolio-4-sm.jpg');
+    background-image: url('./assets/img/portfolio2.jpg');
   }
   
   #gallery-area .gallery-contents .gallery-item:nth-child(3) {
     grid-area: img-3;
-    background-image: url('./assets/img/portfolio-12-sm.jpg');
+    background-image: url('./assets/img/portfolio3.jpg');
   }
   
   #gallery-area .gallery-contents .gallery-item:nth-child(4) {
     grid-area: img-4;
-    background-image: url('./assets/img/portfolio-4-sm.jpg');
+    background-image: url('./assets/img/portfolio4.jpg');
   }
   
   #gallery-area .gallery-contents .gallery-item:nth-child(5) {
     grid-area: img-5;
-    background-image: url('../img/box-5.jpg');
+    background-image: url('./assets/img/portfolio5.jpg');
   }
   #gallery-area .gallery-contents .gallery-item:nth-child(6) {
     grid-area: img-6;
-    background-image: url('../img/box-6.jpg');
+    background-image: url('./assets/img/portfolio6.jpg');
   }
   
   #gallery-area .gallery-contents .gallery-item:nth-child(7) {
     grid-area: img-7;
-    background-image: url('../img/box-7.jpg');
+    background-image: url('./assets/img/portfolio7.jpg');
   }
   
   #gallery-area .gallery-contents .gallery-item:nth-child(8) {
     grid-area: img-8;
-    background-image: url('../img/box-8.jpg');
+    background-image: url('./assets/img/portfolio8.jpg');
   }
   
+  #gallery-area .gallery-contents .gallery-item:nth-child(9) {
+    grid-area: img-9;
+    background-image: url('./assets/img/portfolio9.jpg');
+  }
+
+
   #gallery-area .gallery-contents .gallery-item .overlay {
    
     position: absolute;
@@ -360,12 +366,12 @@ body {
     width: 100%;
     opacity: 0;
     visibility: hidden;
-    background-color: #64c295;
+    background-color: #171717;
     z-index: 1;
   
   }
   
-  #gallery-area .gallery-contents .gallery-item .logo-area {
+  #gallery-area .gallery-contents .gallery-item .pic-area {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -380,56 +386,22 @@ body {
     visibility: hidden;
   }
   
-  #gallery-area .gallery-contents .gallery-item .logo-area img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 5px;
+  
+  
+  #gallery-area .gallery-contents .gallery-item .pic-area strong {
+    color: white;
+    text-transform: capitalize;
   }
   
-  #gallery-area .gallery-contents .gallery-item .logo-area strong {
+  #gallery-area .gallery-contents .gallery-item .pic-area span {
     color: white;
     text-transform: uppercase;
   }
   
-  #gallery-area .shop-btn {
-    padding: 100px 0;
-    text-align: center;
-    background-color: #272e34;
-  }
-  #gallery-area .shop-btn a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    border: 1px solid white;
-    padding: 10px 25px;
   
-  
-  }
-  
-  
-  @media (max-width: 991px) {
-    #gallery-area .gallery-contents {
-      grid-template-columns: repeat(4,1fr);
-      grid-template-areas: 'img-1 img-2 img-3 img-4'
-                           'img-6 img-6 img-3 img-4'
-                           'img-5 img-8 img-8 img-7';
-    }
-  }
+ 
   
   @media (max-width: 767px) {
-    #gallery-area .gallery-contents {
-      grid-template-columns: repeat(2,1fr);
-      grid-template-areas: 'img-1 img-2'
-                           'img-3 img-4'
-                           'img-5 img-6'
-                           'img-7 img-8';
-    }
-  }
-  
-  @media (max-width: 575px) {
     #gallery-area .gallery-contents {
       grid-template-columns: repeat(1,1fr);
       grid-template-areas: 'img-1'
@@ -439,7 +411,8 @@ body {
                            'img-5'
                            'img-6'
                            'img-7'
-                           'img-8';
+                           'img-8'
+                           'img-9';
     }
 
 
